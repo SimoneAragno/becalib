@@ -1,0 +1,243 @@
+# French translations for PACKAGE package
+# Traductions fran�aises du paquet PACKAGE.
+# Copyright (C) 2024 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# <EMAIL@ADDRESS>, 2024.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-03-11 13:23+0100\n"
+"PO-Revision-Date: 2024-03-04 14:40+0100\n"
+"Last-Translator: <EMAIL@ADDRESS>\n"
+"Language-Team: French\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: becalib/component.py:604
+msgid "Areal heat capacity"
+msgstr "Capacité thermique massique"
+
+#: becalib/component.py:588
+msgid "Component"
+msgstr "Composant"
+
+#: charts.py:161 charts.py:162
+msgid "Component layers downward heat flow"
+msgstr "Paroi multicouche flux descendant"
+
+#: charts.py:129 charts.py:130
+msgid "Component layers horizontal heat flow"
+msgstr "Paroi multicouche flux horizontale"
+
+#: charts.py:145 charts.py:146
+msgid "Component layers upwards heat flow"
+msgstr "Paroi multicouche flux ascendant"
+
+#: becalib/component.py:551 becalib/component.py:562
+msgid "Conductivity λ [W/mK]"
+msgstr "Conductivité thermique λ"
+
+#: becalib/component.py:598
+msgid "Decrement factor"
+msgstr "Facteur d'ammortissement"
+
+#: becalib/component.py:555 becalib/component.py:566
+msgid "Diffusivity α [m²/ (s*10^6)]"
+msgstr "Diffusivite α [m²/ (s*10^6)]"
+
+#: becalib/component.py:556 becalib/component.py:567
+msgid "Effusivity"
+msgstr "Effusivité"
+
+#: becalib/component.py:440 becalib/algos.py:371
+msgid "Excellent 5/5"
+msgstr "Excellent 5/5"
+
+#: charts.py:120 charts.py:121 becalib/component.py:586
+msgid "Exterior"
+msgstr "Extérieur"
+
+#: becalib/component.py:601
+msgid "Exterior admittance"
+msgstr "Admittance extérieure"
+
+#: becalib/component.py:603
+msgid "Exterior areal heat capacity"
+msgstr "Capacité thermique surfacique extérieure"
+
+#: becalib/component.py:527
+msgid "Exterior surface"
+msgstr "Surface extérieure"
+
+#: becalib/component.py:593
+msgid "Exterior surface thermal resistance Rse"
+msgstr "Résistance thermique extérieure Rse"
+
+#: becalib/component.py:443 becalib/algos.py:374
+msgid "Good 4/5"
+msgstr "Bonne 4/5"
+
+#: layers.py:109
+msgid "Gross density ρ"
+msgstr "Densité ρ"
+
+#: becalib/component.py:552 becalib/component.py:563
+msgid "Gross density ρ [kg/m³]"
+msgstr "Densité ρ [kg/m³]"
+
+#: layers.py:187 becalib/component.py:589
+msgid "Heat flow direction"
+msgstr "Direction du flux"
+
+#: layers.py:106 layers.py:183
+msgid "INPUTS:"
+msgstr "Données d'entree"
+
+#: becalib/component.py:454 becalib/algos.py:385
+msgid "Impossible score"
+msgstr "Score impossible"
+
+#: charts.py:119 charts.py:120 becalib/component.py:581
+msgid "Interior"
+msgstr "Intérieur"
+
+#: becalib/component.py:600
+msgid "Interior admittance"
+msgstr "Admittance intérieure"
+
+#: becalib/component.py:602
+msgid "Interior areal heat capacity"
+msgstr "Capacité thermique surfacique intérieure"
+
+#: becalib/component.py:510
+msgid "Interior surface"
+msgstr "Surface intérieure"
+
+#: becalib/component.py:592
+msgid "Interior surface thermal resistance Rsi"
+msgstr "Résistance thermique intérieure Rsi"
+
+#: layers.py:105 layers.py:181
+msgid "Layer values"
+msgstr "Paramètres de la couche"
+
+#. list of layer data
+#: becalib/component.py:580
+msgid "Layers:"
+msgstr "Couches"
+
+#: becalib/component.py:446 becalib/algos.py:377
+msgid "Medium 3/5"
+msgstr "Moyenne 3/5"
+
+#: becalib/component.py:548
+msgid "Name"
+msgstr "Nom"
+
+#: layers.py:111 layers.py:189
+msgid "OUTPUTS:"
+msgstr "Données de sortie"
+
+#: becalib/component.py:597
+msgid "Periodic transmittance"
+msgstr "Coefficient de transmission thermique périodique"
+
+#: becalib/component.py:452 becalib/algos.py:383
+msgid "Poor 1/5"
+msgstr "Mauvais 1/5"
+
+#: becalib/component.py:595
+msgid "Resistance"
+msgstr "Résistance"
+
+#: becalib/component.py:554 becalib/component.py:565
+msgid "Resistance R [m²K/W]"
+msgstr "Résistance R [m²K/W]"
+
+#: layers.py:110
+msgid "Specific heat capacity c"
+msgstr "Capacité thermique massique c"
+
+#: becalib/component.py:553 becalib/component.py:564
+msgid "Specific heat capacity c [J/kgK]"
+msgstr "Capacité thermique massique  c [J/kgK]"
+
+#: becalib/component.py:449 becalib/algos.py:380
+msgid "Sufficient 2/5"
+msgstr "Passable 2/5"
+
+#: becalib/component.py:608
+msgid "Summer performance"
+msgstr "Performance d'été"
+
+#: becalib/component.py:606
+msgid "Surface mass"
+msgstr "Masse surfacique"
+
+#. Setting y axis label for the plot
+#: charts.py:61 charts.py:62
+msgid "Temperature [°C]"
+msgstr "Température [°C]"
+
+#: charts.py:73 charts.py:74
+msgid "Text"
+msgstr "Temp_ext"
+
+#: layers.py:108 layers.py:186
+msgid "Thermal conductivity λ"
+msgstr "Conductivité thermique λ"
+
+#: layers.py:114
+msgid "Thermal diffusivity α"
+msgstr "Diffusivité α"
+
+#: layers.py:115
+msgid "Thermal effusivity"
+msgstr "Effusivité"
+
+#: layers.py:113 layers.py:191
+msgid "Thermal resistance R"
+msgstr "Résistance thermique R"
+
+#: layers.py:107 layers.py:185 becalib/component.py:594
+msgid "Thickness"
+msgstr "Épaisseur"
+
+#: becalib/component.py:549 becalib/component.py:561
+msgid "Thickness [m]"
+msgstr "Épaisseur [m]"
+
+#. Setting x axis label for the plot
+#: charts.py:58 charts.py:59
+msgid "Time [h]"
+msgstr "Temps [h]"
+
+#: becalib/component.py:590
+msgid "Time period"
+msgstr "Période "
+
+#. Settng title for the plot in blue color
+#: charts.py:55 charts.py:56 becalib/component.py:599
+msgid "Time shift"
+msgstr "Déphasage"
+
+#: becalib/component.py:596
+msgid "Transmittance"
+msgstr "Conductivité thermique (U-value W/m²K)"
+
+#: charts.py:73 charts.py:74
+msgid "Tsurf_int"
+msgstr "Temp_surf_int"
+
+#: becalib/component.py:550
+msgid "is_air"
+msgstr "is_air"
+
+#: charts.py:121 charts.py:122
+msgid "thickness [m]"
+msgstr "Épaisseur [m]"
