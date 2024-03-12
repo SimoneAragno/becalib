@@ -4,13 +4,9 @@ build-backend = "hatchling.build"
 
 [project]
 name = "becalib"
-version = "0.0.1"
+version = "0.0.11"
 
-dynamic = ["dependencies"]
-[tool.setuptools.dynamic]
-dependencies = {file = ["requirements.txt"]}
-
-requires-python = ">=3.12"
+requires-python = ">=3.10"
 
 authors = [
   { name="Simone ARAGNO", email="aragno.simone@gmail.com" },
@@ -18,9 +14,10 @@ authors = [
 maintainers = [
   {name="Simone ARAGNO", email="aragno.simone@gmail.com" }
 ]
+description= "Building Envelop Components Analysis Library "
 
-description = "Building Envelop Components Analysis Library"
 readme = "README.md"
+
 license = {file = "LICENSE"}
 
 keywords = ["Building", 
@@ -38,7 +35,17 @@ classifiers = [
     "Operating System :: OS Independent",
 ]
 
+dynamic = ["dependencies"]
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
+
 
 [project.urls]
 Repository = "https://github.com/SimoneAragno/becalib"
 Changelog = "https://github.com/SimoneAragno/becalib/blob/main/CHANGELOG.md"
+
+[tool.setuptools]
+# If there are data files included in your packages that need to be
+# installed, specify them here.
+package-data = {"locales" = ["*.mo","*.po"]}

@@ -1,2 +1,2 @@
-# becalib
-Building Envelop Components Analysis Library  
+# BECALIB
+Building Envelop Components Analysis Library from md
