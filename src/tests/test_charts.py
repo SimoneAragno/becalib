@@ -15,8 +15,8 @@ class Testplot(unittest.TestCase):
             max_temp= 35, # °C
             min_temp = 28, # °C
             time_period =24, # in hours
-            decrement_factor=0.25,  # ammortissement
-            time_shift=10,
+            decrement_factor=1,  # ammortissement
+            time_shift=6,
             language="fr"
               )
         
@@ -25,7 +25,7 @@ class Testplot(unittest.TestCase):
         self.assertTrue(bool(plt_sinu))
 
 
-    def _wall_layer(self):
+    def test_wall_layer(self):
 
         plt_lay= plot_component_layers(
             names=["layer 1","layer 2","layer 3"],

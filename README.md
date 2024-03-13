@@ -1,6 +1,7 @@
 
-![BECALIB Logo](https://github.com/SimoneAragno/becalib/blob/main/docs/images/logo_big.svg)
+<p align="center">
+  <img src="docs/images/logo_big.svg?raw=true" alt="BECALIB logo"/>
+</p>
 
-# BECALIB
+
 Building Envelop Components Analysis Library from md
-!

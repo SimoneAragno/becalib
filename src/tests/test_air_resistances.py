@@ -13,9 +13,6 @@ class TestAirResist(unittest.TestCase):
     def test_get_res_do(self):
         self.assertEqual((0.17 , 0.04),get_surface_resistances(heat_flow_direction="Do"))
 
-    
-
-
     def test_get_resistance_unventilated_air_layer(self):
 
         self.assertEqual(

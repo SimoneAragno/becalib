@@ -44,15 +44,20 @@ def plot_sinusoidal_wave(
     c=0
 
     x = np.arange(0,2*time_period,0.1) 
-    y = amplitude_ext* np.sin(b*x+c) + temp_average
+
+    # exterior sinusoidal wave
+    y = amplitude_ext* np.sin(b*(x-0))+ temp_average
 
     amplitude_int=amplitude_ext*decrement_factor
+
     
-    z = amplitude_int* np.sin(b*x+time_shift)+ temp_average
+    # interior sinusoidal wave
+
+    z = amplitude_int* np.sin(b*(x-time_shift))+ temp_average
 
     plt.plot(x,y, x,z)
     
-    # Settng title for the plot in blue color
+    # Setting title for the plot in black color
 
     time_shift_str=_('Time shift')
     decrement_factor_str=_("Decrement factor")
@@ -84,8 +89,6 @@ f"""{time_shift_str}:  {time_shift:.1f} [h]
     plt.legend([_("Text"), _('Tsurf_int')])     
 
 
-
-    
     return plt
 
 
