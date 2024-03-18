@@ -53,7 +53,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
   <a href="https://colab.research.google.com/drive/1wi_Zvera_F_ryUTSldSsDxKofC2YJIEZ#scrollTo=QZ7VNNPE2P2L">
-    <img src="https://raw.githubusercontent.com/SimoneAragno/becalib/main/docs/images/becalib_screenshots.jpg?token=GHSAT0AAAAAACOJLW6MUUN2V7FMS6DU2QR2ZPYPHEQ" alt="BECALIB screenshots"  
+    <img src="https://raw.githubusercontent.com/SimoneAragno/becalib/main/docs/images/becalib_screenshots.jpg?token=GHSAT0AAAAAACOJLW6MP4SVC2APE3GHS7YCZPYWHKA" alt="BECALIB screenshots"  
     name="BECALIB Building Envelop Component Analysis screenshots" width="800">
   </a>
 
