@@ -1,6 +1,3 @@
-
-
-
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
@@ -9,8 +6,6 @@
     name="BECALIB Building Envelop Component Analysis" height="200">
   </a>
   <!-- <h3 align="center">Title</h3> -->
-
-
 
   <p align="center">
     <!-- An awesome short description -->
@@ -27,8 +22,6 @@
     <a href="https://pypi.org/project/becalib/">PyPI</a>
   </p>
 </div>
-
-
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -92,39 +85,33 @@ Love and:
 
 
 
-
 <!-- GETTING STARTED -->
 ## Getting Started
 BECALIB python package is available on [PyPI][pypi_url] repository. 
 
 If you have some experience with python programming and you want a Stand-alone installation, all you need is install [python][python_url] on your machine.
 
-If you are not familiar with python installations you can use/copy BECALIB from [google Colab Notebook DEMO][colab_url].
+If you are not familiar with python installations you can use/copy BECALIB notebook from [google Colab Notebook DEMO][colab_url].
 
 ### Prerequisites
 Dependencies of BECALIB are available in requirements.txt file but you do not need to install anything because everything have been wrapped in BECALIB package available on [PyPI][pypi_url]
 
 
-
 ### Installation
 
-Stand-alone installation:
+#### Stand-alone installation:
 
-1. Activate your virtual environnement
-2. Install with pip:
+1. Activate your [virtual environnement][venv_url]
+2. Install becalib with pip:
   ```
   pip install becalib
   ```
 
-Google colab notbook installation:
+#### Google colab notbook installation:
   ```
   !pip install becalib
   ```
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-
 
 [pypi_url]: https://pypi.org/project/becalib/ "PyPI"
 [python_url]: https://pypi.org/project/becalib/ "python"
@@ -133,56 +120,137 @@ Google colab notbook installation:
 [numpy_url]:https://pypi.org/project/numpy/
 [pandas_url]:https://pypi.org/project/pandas/
 [matplotlib_url]:https://pypi.org/project/matplotlib/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+[venv_url]:https://docs.python.org/3/tutorial/venv.html
 
 
 
 
 <!-- USAGE EXAMPLES -->
 ## Usage
+You can use BECALIB in a python file or à notebook (jupyter/google colab) 
+### 0. import classes an methods from BECALIB library
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+```python
+from becalib import MaterialLayer, AirLayer
+from becalib import Component
+```
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+### 1. Materials layers setup
+Instantiate a layer objet for each component layer \
+Example of concrete layer setup:
+```python
+concrete  =  MaterialLayer(
+            name="Concrete",
+            thickness=0.1, # m
+            thermal_conductivity=1.8, # lambda W/mK
+            specific_heat_capacity=1000, #  c J/kgK            
+            gross_density=2400, # ro kg/mc
+```
+
+Example of air gap layer setup:
+```python
+air_gap  =  AirLayer(
+    name="air_gap",
+    thickness=0.1, # m
+    heat_flow_direction="Do"
+)
+```
+
+### 2. Components setup:
+Instantiate a component objet and set:
+* List of layers  (interior to exterior)
+* Heat flow direction:\
+            "Ho": Horizontal (example: wall) or \
+            "Up": Upwards (example Roof) or \
+            "Do": Downwards (example floor)
+* language (en, fr, etc..)
+
+```python
+wall = Component(name="Wall", 
+                layers=[
+                concrete,
+                air_gap,
+                concrete ],
+                heat_flow_direction="Do",
+                language="en"
+                )
+```
+### 3. Get à component table (Pandas DataFrame)
+
+```python
+wall.get_layers_dataframe(data_type="st")
+```
+<a href="https://colab.research.google.com/drive/1wi_Zvera_F_ryUTSldSsDxKofC2YJIEZ#scrollTo=QZ7VNNPE2P2L">
+  <img src="docs/images/becalib_comp_dataframe_en.png?raw=true" alt="BECALIB screenshots"  
+  name="BECALIB Building Envelop Component Analysis screenshots" width="800">
+</a>
+
+### 4. Print values
+```python
+print(wall.get_summer_performance_key_values())
+```
+```plain text
+#######################################
+Component: wall
+
+Time period: 24 [h]
+
+Thickness: 0.440 [m]
+Resistance: 2.114 [m²K/W] Rsi and Rse included
+Transmittance: 0.473 [W/m²K]
+
+Decrement factor: 0.055 [-]
+Time shift: 13.0 [h]
+
+Interior areal heat capacity: 67.185 [kJ/m²K] 
+
+Summer performance: Excellent 5/5 (in accordance with italian DM 26/06/2009)
+Surface mass: 612.8 [kg/m²]
+
+#######################################
+```
+### 5. Plot diagrams
+```python
+wall.get_component_layers_chart().show()
+```
+
+<a href="https://colab.research.google.com/drive/1wi_Zvera_F_ryUTSldSsDxKofC2YJIEZ#scrollTo=QZ7VNNPE2P2L">
+  <img src="docs\images\layers_en.png?raw=true" alt="BECALIB screenshots"  
+  name="BECALIB Building Envelop Component Analysis screenshots" width="400">
+</a>
+
+```python
+paroi.get_component_sinusoidal_wave_chart().show()
+```
+<a href="https://colab.research.google.com/drive/1wi_Zvera_F_ryUTSldSsDxKofC2YJIEZ#scrollTo=QZ7VNNPE2P2L">
+  <img src="docs\images\waves_en.png?raw=true" alt="BECALIB screenshots"  
+  name="BECALIB Building Envelop Component Analysis screenshots" width="400">
+</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 <!-- ROADMAP -->
 ## Roadmap
-
-- [x] Add Changelog
-- [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
-- [ ] Multi-language Support
-    - [ ] Chinese
+- [ ] Add docs with Sphinx
+    - [ ] set Sphinx docs
+    - [ ] deploy docs static pages
+- [ ] Add materials database
+    - [ ] Define standard materials database
+    - [ ] Component setup from material database
+- [ ] Add Condensation risk analysis
+    - [ ] Computations
+    - [ ] Glaser diagram
+- [ ] Add Comparator tools
+    - [ ] Materials comparator table
+    - [ ] Materials comparator charts
+    - [ ] Components comparator table
+    - [ ] Components comparator charts
+- [ ] Multi-language 
+    - [x] French
+    - [ ] Italian
     - [ ] Spanish
 
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/SimoneAragno/becalib/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -204,84 +272,28 @@ Don't forget to give the project a star! Thanks again!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 <!-- LICENSE -->
-## License
 
+## License
 Distributed under the MIT License. See `LICENSE` for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 <!-- CONTACT -->
+
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+Simone ARAGNO - aragno.simone@gmail.com
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Project Link: [https://github.com/SimoneAragno/becalib](https://github.com/SimoneAragno/becalib)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
-
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
-* [Malven's Grid Cheatsheet](https://grid.malven.co/)
-* [Img Shields](https://shields.io)
-* [GitHub Pages](https://pages.github.com)
-* [Font Awesome](https://fontawesome.com)
-* [React Icons](https://react-icons.github.io/react-icons/search)
+* [Best-README-Template](https://github.com/othneildrew/Best-README-Template)
+* [ISO 13786:2017 Thermal performance of building components Dynamic thermal characteristics Calculation methods](https://www.iso.org/standard/65711.html)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-1wi_Zvera_F_ryUTSldSsDxKofC2YJIEZ#scrollTo=QZ7VNNPE2P2L
-
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
-[product-screenshot]: images/screenshot.png
-[Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
-[Next-url]: https://nextjs.org/
-[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
-[React-url]: https://reactjs.org/
-
-[Vue.js]: https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D
-
-[Vue-url]: https://vuejs.org/
-[Angular.io]: https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white
-[Angular-url]: https://angular.io/
-[Svelte.dev]: https://img.shields.io/badge/Svelte-4A4A55?style=for-the-badge&logo=svelte&logoColor=FF3E00
-[Svelte-url]: https://svelte.dev/
-[Laravel.com]: https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white
-[Laravel-url]: https://laravel.com
-[Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
-[Bootstrap-url]: https://getbootstrap.com
-[JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
-[JQuery-url]: https://jquery.com 
-
-
-
-<script>
-a_test = "test"
-</script>
