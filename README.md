@@ -233,6 +233,11 @@ paroi.get_component_sinusoidal_wave_chart().show()
 
 <!-- ROADMAP -->
 ## Roadmap
+- [x] Material and air layers
+- [x] Components
+- [x] Air resistances (ISO 6946:2007)
+- [x] Summer Analysis values (ISO 13786)
+- [x] Summer Analysis charts (ISO 13786)
 - [ ] Add docs with Sphinx
     - [ ] set Sphinx docs
     - [ ] deploy docs static pages
@@ -247,7 +252,7 @@ paroi.get_component_sinusoidal_wave_chart().show()
     - [ ] Materials comparator charts
     - [ ] Components comparator table
     - [ ] Components comparator charts
-- [ ] Multi-language 
+- [ ] Multi-language (gettext)
     - [x] French
     - [ ] Italian
     - [ ] Spanish
