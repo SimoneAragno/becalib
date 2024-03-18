@@ -2,7 +2,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/SimoneAragno/becalib">
-    <img src="https://raw.githubusercontent.com/SimoneAragno/becalib/ba44ef27a3105a3b7de21b95fed75e6504c087cd/docs/images/logo_big.svg?token=AI4ZNM67PMBQSPMHXOHWAVTF7B4P2" alt="Logo BECALIB"  
+    <img src="https://raw.githubusercontent.com/SimoneAragno/becalib/8aabe8bf7f2064355794dbb82db58b6e9965a401/docs/images/logo_big.svg?token=AI4ZNMY56SZNU6OHG2XLLRDF7CYNW" alt="Logo BECALIB"  
     name="BECALIB Building Envelop Component Analysis" height="200">
   </a>
   <!-- <h3 align="center">Title</h3> -->
