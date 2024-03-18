@@ -2,7 +2,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/SimoneAragno/becalib">
-    <img src="docs/images/logo_big.svg?raw=true" alt="Logo BECALIB"  
+    <img src="https://raw.githubusercontent.com/SimoneAragno/becalib/main/docs/images/logo_big.svg?token=GHSAT0AAAAAACOJLW6NEVVLBRP4C4MYC5DAZPYO3MQ?raw=true" alt="Logo BECALIB"  
     name="BECALIB Building Envelop Component Analysis" height="200">
   </a>
   <!-- <h3 align="center">Title</h3> -->
