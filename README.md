@@ -2,7 +2,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/SimoneAragno/becalib">
-    <img src="https://raw.githubusercontent.com/SimoneAragno/becalib/main/docs/images/logo_big.svg?token=GHSAT0AAAAAACOJLW6NEVVLBRP4C4MYC5DAZPYO3MQ?raw=true" alt="Logo BECALIB"  
+    <img src="https://raw.githubusercontent.com/SimoneAragno/becalib/ba44ef27a3105a3b7de21b95fed75e6504c087cd/docs/images/logo_big.svg?token=AI4ZNM67PMBQSPMHXOHWAVTF7B4P2" alt="Logo BECALIB"  
     name="BECALIB Building Envelop Component Analysis" height="200">
   </a>
   <!-- <h3 align="center">Title</h3> -->
@@ -53,7 +53,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
   <a href="https://colab.research.google.com/drive/1wi_Zvera_F_ryUTSldSsDxKofC2YJIEZ#scrollTo=QZ7VNNPE2P2L">
-    <img src="docs/images/becalib_screenshots.jpg?raw=true" alt="BECALIB screenshots"  
+    <img src="https://raw.githubusercontent.com/SimoneAragno/becalib/main/docs/images/becalib_screenshots.jpg?token=GHSAT0AAAAAACOJLW6MUUN2V7FMS6DU2QR2ZPYPHEQ" alt="BECALIB screenshots"  
     name="BECALIB Building Envelop Component Analysis screenshots" width="800">
   </a>
 
