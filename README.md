@@ -1,10 +1,8 @@
-![image](docs/images/logo_big.svg)
-
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
   <a href="https://github.com/SimoneAragno/becalib">
-    <img src="https://raw.githubusercontent.com/SimoneAragno/becalib/8aabe8bf7f2064355794dbb82db58b6e9965a401/docs/images/logo_big.svg?token=AI4ZNMY56SZNU6OHG2XLLRDF7CYNW" alt="Logo BECALIB"  
+    <img src="https://github.com/SimoneAragno/becalib/raw/main/docs/images/logo_big.svg" alt="Logo BECALIB"  
     name="BECALIB Building Envelop Component Analysis" height="200">
   </a>
   <!-- <h3 align="center">Title</h3> -->
