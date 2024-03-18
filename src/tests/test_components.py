@@ -1,6 +1,6 @@
 import unittest
-from becalib.layers import MaterialLayer, AirLayer
-from becalib.component import Component
+from becalib import MaterialLayer, AirLayer
+from becalib import Component
 import math
 import pandas as pd
 

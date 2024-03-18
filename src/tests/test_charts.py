@@ -21,7 +21,7 @@ class Testplot(unittest.TestCase):
               )
         
 
-        plt_sinu.show()
+        # plt_sinu.show()
         self.assertTrue(bool(plt_sinu))
 
 
