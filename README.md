@@ -1,3 +1,5 @@
+![image](docs/images/logo_big.svg)
+
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
