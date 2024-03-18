@@ -1,8 +1,10 @@
+
+
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
   <a href="https://github.com/SimoneAragno/becalib">
-    <img src="https://github.com/SimoneAragno/becalib/raw/main/docs/images/logo_big.svg" alt="Logo BECALIB"  
+    <img src="https://raw.githubusercontent.com/SimoneAragno/becalib/main/docs/images/logo_big.svg" alt="Logo BECALIB"  
     name="BECALIB Building Envelop Component Analysis" height="200">
   </a>
   <!-- <h3 align="center">Title</h3> -->
@@ -53,7 +55,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
   <a href="https://colab.research.google.com/drive/1wi_Zvera_F_ryUTSldSsDxKofC2YJIEZ#scrollTo=QZ7VNNPE2P2L">
-    <img src="https://raw.githubusercontent.com/SimoneAragno/becalib/main/docs/images/becalib_screenshots.jpg?token=GHSAT0AAAAAACOJLW6MP4SVC2APE3GHS7YCZPYWHKA" alt="BECALIB screenshots"  
+    <img src="https://raw.githubusercontent.com/SimoneAragno/becalib/main/docs/images/becalib_screenshots.jpg" alt="BECALIB screenshots"  
     name="BECALIB Building Envelop Component Analysis screenshots" width="800">
   </a>
 
@@ -181,7 +183,7 @@ wall = Component(name="Wall",
 wall.get_layers_dataframe(data_type="st")
 ```
 <a href="https://colab.research.google.com/drive/1wi_Zvera_F_ryUTSldSsDxKofC2YJIEZ#scrollTo=QZ7VNNPE2P2L">
-  <img src="docs/images/becalib_comp_dataframe_en.png?raw=true" alt="BECALIB screenshots"  
+  <img src="https://raw.githubusercontent.com/SimoneAragno/becalib/main/docs/images/becalib_comp_dataframe_en.png" alt="BECALIB screenshots"  
   name="BECALIB Building Envelop Component Analysis screenshots" width="800">
 </a>
 
@@ -215,7 +217,7 @@ wall.get_component_layers_chart().show()
 ```
 
 <a href="https://colab.research.google.com/drive/1wi_Zvera_F_ryUTSldSsDxKofC2YJIEZ#scrollTo=QZ7VNNPE2P2L">
-  <img src="docs\images\layers_en.png?raw=true" alt="BECALIB screenshots"  
+  <img src="https://raw.githubusercontent.com/SimoneAragno/becalib/main/docs/images/layers_en.png" alt="BECALIB screenshots"  
   name="BECALIB Building Envelop Component Analysis screenshots" width="400">
 </a>
 
@@ -223,7 +225,7 @@ wall.get_component_layers_chart().show()
 paroi.get_component_sinusoidal_wave_chart().show()
 ```
 <a href="https://colab.research.google.com/drive/1wi_Zvera_F_ryUTSldSsDxKofC2YJIEZ#scrollTo=QZ7VNNPE2P2L">
-  <img src="docs\images\waves_en.png?raw=true" alt="BECALIB screenshots"  
+  <img src="https://raw.githubusercontent.com/SimoneAragno/becalib/main/docs/images/waves_en.png" alt="BECALIB screenshots"  
   name="BECALIB Building Envelop Component Analysis screenshots" width="400">
 </a>
 
