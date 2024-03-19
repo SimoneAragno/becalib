@@ -71,21 +71,13 @@ Static values like u-value and thermal resistance are also available.
 BECALIB provides threshold values and performance scores to help designers enhance their components.
 
 The calculations in BECALIB have been developed in accordance with ISO standards, including ISO 13786 and ISO 6946.
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 ### Built With
-
 Love and:
-
 * [numpy][numpy_url]
 * [pandas][pandas_url]
 * [matplotlib][matplotlib_url]
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -93,10 +85,19 @@ BECALIB python package is available on [PyPI][pypi_url] repository.
 
 If you have some experience with python programming and you want a Stand-alone installation, all you need is install [python][python_url] on your machine.
 
-If you are not familiar with python installations you can use/copy BECALIB notebook from [google Colab Notebook DEMO][colab_url].
+If you are not familiar with python installations you can use/copy BECALIB notebook from [google Colab Notebook DEMO][colab_en_url].
 
 ### Prerequisites
 Dependencies of BECALIB are available in requirements.txt file but you do not need to install anything because everything have been wrapped in BECALIB package available on [PyPI][pypi_url]
+
+## Demo
+Google colab notebooks are available.
+If you want to try BECALIB and create your own components you can start here and duplicate the file.
+
+* [google colab notebook demo [English version]][colab_en_url]
+* [google colab notebook demo [French version]][colab_fr_url]
+
+
 
 
 ### Installation
@@ -113,11 +114,14 @@ Dependencies of BECALIB are available in requirements.txt file but you do not ne
   ```
   !pip install becalib
   ```
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 [pypi_url]: https://pypi.org/project/becalib/ "PyPI"
 [python_url]: https://pypi.org/project/becalib/ "python"
-[colab_url]: https://colab.research.google.com/drive/1wi_Zvera_F_ryUTSldSsDxKofC2YJIEZ#scrollTo=QZ7VNNPE2P2L "Colab Notebook DEMO"
+
+[colab_en_url]: https://colab.research.google.com/drive/1wi_Zvera_F_ryUTSldSsDxKofC2YJIEZ#scrollTo=QZ7VNNPE2P2L "Colab Notebook EN DEMO"
+
+[colab_fr_url]: https://colab.research.google.com/drive/1cml04fzYJg9I05-lZxdJ_02pw_JckRT1#scrollTo=QZ7VNNPE2P2L "Colab Notebook FR DEMO"
 
 [numpy_url]:https://pypi.org/project/numpy/
 [pandas_url]:https://pypi.org/project/pandas/
@@ -177,7 +181,7 @@ wall = Component(name="Wall",
                 language="en"
                 )
 ```
-### 3. Get à component table (Pandas DataFrame)
+### 3. Get component table (Pandas DataFrame)
 
 ```python
 wall.get_layers_dataframe(data_type="st")
@@ -229,7 +233,7 @@ paroi.get_component_sinusoidal_wave_chart().show()
   name="BECALIB Building Envelop Component Analysis screenshots" width="400">
 </a>
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 <!-- ROADMAP -->
 ## Roadmap
@@ -259,7 +263,7 @@ paroi.get_component_sinusoidal_wave_chart().show()
 
 See the [open issues](https://github.com/SimoneAragno/becalib/issues) for a full list of proposed features (and known issues).
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 
 
@@ -277,14 +281,14 @@ Don't forget to give the project a star! Thanks again!
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 <!-- LICENSE -->
 
 ## License
 Distributed under the MIT License. See `LICENSE` for more information.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 <!-- CONTACT -->
 
@@ -294,7 +298,7 @@ Simone ARAGNO - aragno.simone@gmail.com
 
 Project Link: [https://github.com/SimoneAragno/becalib](https://github.com/SimoneAragno/becalib)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 
 <!-- ACKNOWLEDGMENTS -->
@@ -303,4 +307,4 @@ Project Link: [https://github.com/SimoneAragno/becalib](https://github.com/Simon
 * [Best-README-Template](https://github.com/othneildrew/Best-README-Template)
 * [ISO 13786:2017 Thermal performance of building components Dynamic thermal characteristics Calculation methods](https://www.iso.org/standard/65711.html)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
