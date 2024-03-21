@@ -1,5 +1,3 @@
-
-
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
@@ -11,9 +9,8 @@
 
   <p align="center">
     <!-- An awesome short description -->
-    <!-- <br /> -->
-    <!-- <a href="https://github.com/SimoneAragno/becalib"><strong>Explore the docs</strong></a> -->
-    <!-- <br /> -->
+    <br />
+    <a href="https://github.com/SimoneAragno/becalib"><strong>github repo</strong></a>
     <br />
     <a href="https://colab.research.google.com/drive/1wi_Zvera_F_ryUTSldSsDxKofC2YJIEZ#scrollTo=QZ7VNNPE2P2L">Colab Notebook Demo</a>
     ·
@@ -26,8 +23,9 @@
 </div>
 
 <!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
+## Table of Contents
+<!-- <details> -->
+  <!-- <summary>Table of Contents</summary> -->
   <ol>
     <li>
       <a href="#about-the-project">About The Project</a>
@@ -49,7 +47,7 @@
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
-</details>
+<!-- </details> -->
 
 
 <!-- ABOUT THE PROJECT -->
@@ -60,9 +58,9 @@
   </a>
 
 
-BECALIB is a tool designed to run thermal analyses of building envelope components such as walls, roofs, and floors.
+BECALIB is a tool designed to run thermal analysis of building envelope components such as walls, roofs, and floors.
 
-With this tool, you can define the materials and air gaps in a multi-layer component, run thermal analyses, and generate diagrams.
+With this tool, you can define the materials and air gaps in a multi-layer component, run thermal analysis, and generate diagrams.
 
 Currently, BECALIB focuses on analyzing summer performance. Specifically, it can compute time-shift and decrement factors. These values allow designers to evaluate and quantify a component's ability to break heat flow and reduce cooling loads. 
 
@@ -99,7 +97,6 @@ If you want to try BECALIB and create your own components you can start here and
 
 
 
-
 ### Installation
 
 #### Stand-alone installation:
@@ -110,7 +107,7 @@ If you want to try BECALIB and create your own components you can start here and
   pip install becalib
   ```
 
-#### Google colab notbook installation:
+#### Google colab notebook installation:
   ```
   !pip install becalib
   ```
@@ -130,11 +127,10 @@ If you want to try BECALIB and create your own components you can start here and
 
 
 
-
 <!-- USAGE EXAMPLES -->
 ## Usage
-You can use BECALIB in a python file or à notebook (jupyter/google colab) 
-### 0. import classes an methods from BECALIB library
+You can use BECALIB in a python file or a notebook (jupyter/google colab) 
+### 0. import classes and methods from BECALIB library
 
 ```python
 from becalib import MaterialLayer, AirLayer
@@ -195,7 +191,8 @@ wall.get_layers_dataframe(data_type="st")
 ```python
 print(wall.get_summer_performance_key_values())
 ```
-```plain text
+
+```
 #######################################
 Component: wall
 
@@ -215,6 +212,7 @@ Surface mass: 612.8 [kg/m²]
 
 #######################################
 ```
+
 ### 5. Plot diagrams
 ```python
 wall.get_component_layers_chart().show()
@@ -262,9 +260,6 @@ paroi.get_component_sinusoidal_wave_chart().show()
     - [ ] Spanish
 
 See the [open issues](https://github.com/SimoneAragno/becalib/issues) for a full list of proposed features (and known issues).
-
-
-
 
 
 <!-- CONTRIBUTING -->
