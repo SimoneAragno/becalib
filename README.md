@@ -37,6 +37,7 @@
       <a href="#getting-started">Getting Started</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#demo">Demo</a></li>
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
@@ -88,7 +89,7 @@ If you are not familiar with python installations you can use/copy BECALIB noteb
 ### Prerequisites
 Dependencies of BECALIB are available in requirements.txt file but you do not need to install anything because everything have been wrapped in BECALIB package available on [PyPI][pypi_url]
 
-## Demo
+### Demo
 Google colab notebooks are available.
 If you want to try BECALIB and create your own components you can start here and duplicate the file.
 
@@ -235,9 +236,9 @@ paroi.get_component_sinusoidal_wave_chart().show()
 
 <!-- ROADMAP -->
 ## Roadmap
-- [x] Material and air layers
-- [x] Components
-- [x] Air resistances (ISO 6946:2007)
+- [x] Material and air layers classes
+- [x] Components classes
+- [x] Air resistances computations (ISO 6946:2007)
 - [x] Summer Analysis values (ISO 13786)
 - [x] Summer Analysis charts (ISO 13786)
 - [ ] Add docs with Sphinx
