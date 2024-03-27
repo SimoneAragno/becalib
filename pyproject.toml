@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "becalib"
-version = "0.0.16"
+version = "0.0.1"
 
 requires-python = ">=3.10"
 
@@ -14,7 +14,7 @@ authors = [
 maintainers = [
   {name="Simone ARAGNO", email="aragno.simone@gmail.com" }
 ]
-description= "Building Envelop Components Analysis Library "
+description= "Building Envelope Components Analysis Library "
 
 readme = "README.md"
 
@@ -23,9 +23,13 @@ license = {file = "LICENSE"}
 keywords = ["Building", 
             "Building physics",
             "Envelope", 
-            "time shift", 
-            "Envelop",
-            "13786"]
+            "Time shift",
+            "Decrement factor", 
+            "Areal heat capacity",
+            "Summer performance", 
+            "Wall", 
+            "Facade",
+            "ISO 13786"]
 
 
 classifiers = [
